@@ -10,13 +10,13 @@ body {
   line-height: 24px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 420px) {
   .waves{
     display: none;
   }
   #button-submit{
     
-    right:-25px;
+    right:-55px;
   }
 }
 
