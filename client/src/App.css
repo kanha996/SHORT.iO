@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 body {
   background: #23253d;
   /* background: #23253d url("assets/images/spaceman.svg"); */
@@ -9,7 +10,7 @@ body {
   line-height: 24px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 412px) {
   .waves{
     display: none;
   }
@@ -43,18 +44,20 @@ h6 {
 }
 
 header {
+  
   max-width: 300px;
   margin: auto;
 }
 header h1 {
+  font-family: 'Permanent Marker', cursive;
   margin: 0;
-  color: #fff;
+  color: rgb(10, 171, 235);
   font-size: 88px;
   line-height: 88px;
   font-weight: 700;
 }
 header h1 span {
-  color: #ccc;
+  color: rgb(204, 204, 204);
 }
 header small {
   color: #7e8099;
@@ -90,12 +93,13 @@ main form fieldset input[type="text"] {
 }
 main form fieldset input[type="submit"] {
   background: #12554c url("https://icons8.com/icon/hGHnxaSWwWYb/link");
+  font-family: 'Permanent Marker', cursive;
   background-position: 85% 50%;
   background-size: 30px;
   background-repeat: no-repeat;
   color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 14px;
   height: 100%;
   position: absolute;
@@ -125,13 +129,7 @@ main form fieldset input[type="submit"]:hover {
 
 
 
-main .display-result #result,
-main .display-result #copy {
-  opacity: 1;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
-  transition: 0.3s all;
-}
+
 
 main #result {
   display: block;
@@ -150,12 +148,12 @@ main #result {
 main #copy {
   background: url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/collection/components/icon/svg/copy-sharp.svg);
   background-position: 85% 50%;
-  background-size: 30px;
+  background-size: 40px;
   background-repeat: no-repeat;
   position: absolute;
   height: 30px;
   width: 35px;
-  top: 10px;
+  top: 5px;
   right: 20px;
   border: none;
   cursor: pointer;
@@ -165,6 +163,16 @@ main #copy {
   -o-transition: 0.6s all;
   transition: 0.6s all;
 }
+
+main .display-result #result,
+main .display-result #copy {
+  opacity: 1;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  /* top: 15px; */
+}
+
 main #copy:hover {
   opacity: 0.8;
   -webkit-transition: 0.3s all;

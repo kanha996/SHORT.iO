@@ -7,20 +7,21 @@ import copy from "copy-to-clipboard";
 
 function App() {
   const [url, setUrl] = useState("");
+  const [resUrl, setResUrl] = useState("");
 
   function submitHandler(e) {
     e.preventDefault();
     const postData = { url };
     console.log(url);
-    axios.post(`https://web-short-io.herokuapp.com/api/`, postData).then((res) => {
-      setUrl(res.data.shorturl);
+    axios.post(`https://short-io-web.herokuapp.com/api/`, postData).then((res) => {
+      setResUrl(res.data.shorturl);
       console.log(url);
     });
   }
 
   function copy_btn(e){
     e.preventDefault();
-    copy(url);
+    copy(resUrl);
 
   }
 
@@ -50,7 +51,7 @@ function App() {
             </fieldset>
             <br />
             <fieldset className="display-result">
-              <span id="result">{url}</span>
+              <span id="result">{resUrl}</span>
               <button type="submit" id="copy" onClick={copy_btn}></button>
             </fieldset>
           </form>
