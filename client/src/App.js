@@ -13,7 +13,7 @@ function App() {
     e.preventDefault();
     const postData = { url };
     console.log(url);
-    axios.post(`https://short-io-web.herokuapp.com/api/`, postData).then((res) => {
+    axios.post(`https://short-io.onrender.com/api/`, postData).then((res) => {
       setResUrl(res.data.shorturl);
       console.log(url);
     });
