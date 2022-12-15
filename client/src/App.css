@@ -213,8 +213,9 @@ main #copy:after {
 }
 
 .waves{
-  position: relative;
-  top: 100px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 
